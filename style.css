@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    /* min-height: 100vh; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+   
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* centring things */
+
+.center {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* vertical */
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.center > * {
+    margin: 10px;
+}
+
+/* creating cards */
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* individual elemenent size */
+.box:nth-child(1) {
+    flex: 1;
+    /* align-self: auto; */
+    
+}
+
+.box:nth-child(2){
+    flex: 2;
+    background-color: bisque;
+}
+
+.box:nth-child(3){
+    flex: 1;
+}
+
+.box {
+    background-color: aquamarine;
+}
+
+.boxes>* {
+    margin: 10px; 
+    padding: 20px;
+}
